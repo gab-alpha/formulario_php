@@ -1,0 +1,155 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container Principal */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h4 {
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Estilo do Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botões */
+button {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Botão "+" para adicionar campos */
+#add-experience, #add-reference {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#add-experience:hover, #add-reference:hover {
+    background-color: #218838;
+}
+
+/* Seção de Experiência e Referências */
+#experience-section, #references-section {
+    margin-bottom: 30px;
+}
+
+#experience-section .form-group,
+#references-section .form-group {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#experience-section h4, #references-section h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
